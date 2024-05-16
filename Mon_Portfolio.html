@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mon Portfolio</title>
+        <meta charset="utf-8">
+        <meta type="description" content="Ceci est mon portfolio étudiant">
+        <style>
+          body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          header {
+            background-color: #f0f0f0;
+            padding: 20px;
+          }
+        
+          nav {
+            text-align: left;
+          }
+        
+          nav a {
+            height: 75px;
+            width: 75px;
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: rgb(0, 183, 255);
+            color: #000;
+          }
+        
+          main {
+            padding: 20px;
+          }
+
+           #accueil {
+            width: 100%;
+            height: 100vh;
+            background: url("https://drive.google.com/file/d/d1O0kLVmEKte4JoHdnylFWZ9tMVjOsGUYq/view?usp=drivesdk") top right no-repeat;
+            background-size: cover;
+            position: relative;
+          }
+        
+          section {
+            margin-bottom: 20px;
+          }
+        
+          h2 {
+            margin-top: 0;
+          }
+
+          .container {
+
+          }
+        </style>
+    </head>
+
+    <body>
+
+      <header>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="accueil">
+        <div class="container">
+          <h1>Will Barka</h1>
+          <p>I'm <span class="typed" data-typed-items="Student of the University of Ngaoundere"></span></p>
+          <div class="social-link">
+            <a href="#" class="Facebook"></a>
+            <a href="#" class="WhatsApp"></a>
+            <a href="#" class="Instagram"></a>
+            <a href="#" class="TWitter"></a>
+            <a href="#" class="Telegram"></a>
+          </div>
+        </div>
+        <h2>Bienvenue sur mon portfolio</h2>
+        <p>Je suis un jeune garçon ayant chois de me spécialiser en informatique, passionné par la créatiion de sites web, d'applications web et par le génie logiciel</p>
+      </section>
+
+      <main id="main">
+
+        <section id="apropos">
+          <div class="container">
+            <div class="section-title">
+              <h2>A propos de moi</h2>
+            </div>
+            <div class="row">
+              <div class="img-content">
+                <img src="https://drive.google.com/file/d/1NkZTq7T-dvBmkB_t2WLHmlPsR0fU9Hhy/view?usp=drivesdk" class="img-fuild">
+              </div>
+              <div class="infos-content">
+                <p><i>Le truc ça donne...</i></p>
+                <div class="row">
+                  <div class="biographie">
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Noms et Prénoms:</strong> <span>Barka Gadji Eugène Wilfried</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Naissance:</strong> <span>17 août 2002</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+237 693 53 42 65</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Ville natale:</strong> <span>Yaoundé, Cameroun</span></li>
+                    </ul>
+                  </div>
+                  <div class="biographie">
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Niveau d'étude:</strong> <span>Licence 3</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>lhumiliteteprecedelagloire@gmail.com</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <p>Je suis un étiduant en informatique à l'Université de Ngaoundéré avec déjà un apprentissage de 3 ans dans le développement web, la programmation et le génie logiciel</p>
+
+        </section>
+
+        <section id="competences">
+          <h2>Compétences</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Vous pouvez me contacter par e-mail à l'adresse suivante : lhumiliteteprecedelagloire@gmail.com</p>
+          <form action="#">
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom">
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email">
+              <label for="message">Message :</label>
+              <textarea id="message" name="message"></textarea>
+              <button type="submit">Envoyer</button>
+          </form>
+      </section>
+
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Mon Portfolio</p>
+      </footer>
+
+    </body>
+    
+</html>
