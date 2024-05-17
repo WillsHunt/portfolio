@@ -7,21 +7,21 @@
         <style>
           body{
             font-family: sans-serif;
+            background-color: rgb(146, 138, 138);
             margin: 0;
             padding: 0;
+            
           }
           header {
-            background-color: #f0f0f0;
+            background-color: #c9c5c5;
             padding: 20px;
           }
         
           nav {
-            text-align: left;
+            text-align: center;
           }
         
           nav a {
-            height: 75px;
-            width: 75px;
             display: inline-block;
             margin: 0 10px;
             text-decoration: rgb(0, 183, 255);
@@ -43,44 +43,274 @@
           section {
             margin-bottom: 20px;
           }
+          .container {
+            width: 80%;
+            right: 100%;
+          }
         
-          h2 {
+          h1,h2 {
+            font-family: sans-serif;
+            text-align: center;
             margin-top: 0;
           }
 
-          .container {
-
+          .Facebook, .WhatsApp, .Instagram, .Telegram {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            position: relative;
           }
+
+          .Facebook {
+            background-image: url(https://th.bing.com/th/id/R.afb7f8bde4998f979e82e98c5ea8de35?rik=XqXL4IKtiN3lwg&pid=ImgRaw&r=0);
+            background-position: 0px 0px;
+          }
+
+          .WhatsApp {
+            background-image: url(https://th.bing.com/th/id/R.afb7f8bde4998f979e82e98c5ea8de35?rik=XqXL4IKtiN3lwg&pid=ImgRaw&r=0);
+            background-position: -180px 0px;
+          }
+
+          .Instagram {
+            background-image: url(https://th.bing.com/th/id/R.afb7f8bde4998f979e82e98c5ea8de35?rik=XqXL4IKtiN3lwg&pid=ImgRaw&r=0);
+            background-position: -60px 0px;
+          }
+
+          .Telegram {
+            background-image: url(https://th.bing.com/th/id/R.afb7f8bde4998f979e82e98c5ea8de35?rik=XqXL4IKtiN3lwg&pid=ImgRaw&r=0);
+            background-position: 0px -60px;
+          }
+
+          .container {
+            width: 85%;
+            height: 70%;
+            padding: 20px;
+            border: 20px silver ;
+            margin: 20px;
+          }
+
+          .img.fuild {
+            width: 350px;
+            left: 50%;
+          }
+
+          .contact .info {
+            width: 100%;
+            background: #fff;
+          }
+          
+          .contact .info i {
+            font-size: 20px;
+            color: #0563bb;
+            float: left;
+            width: 44px;
+            height: 44px;
+            background: #eef7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          .contact .info h4 {
+            padding: 0 0 0 60px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #45505b;
+          }
+          
+          .contact .info p {
+            padding: 0 0 0 60px;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #728394;
+          }
+          
+          .contact .info .email,
+          .contact .info .phone {
+            margin-top: 40px;
+          }
+          
+          .contact .info .email:hover i,
+          .contact .info .address:hover i,
+          .contact .info .phone:hover i {
+            background: #0563bb;
+            color: #fff;
+          }
+          
+          .contact .php-email-form {
+            width: 100%;
+            background: #fff;
+          }
+          
+          .contact .php-email-form .form-group {
+            padding-bottom: 8px;
+          }
+          
+          .contact .php-email-form .error-message {
+            display: none;
+            color: #fff;
+            background: #ed3c0d;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+          }
+          
+          .contact .php-email-form .error-message br+br {
+            margin-top: 25px;
+          }
+          
+          .contact .php-email-form .sent-message {
+            display: none;
+            color: #fff;
+            background: #18d26e;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+          }
+          
+          .contact .php-email-form .loading {
+            display: none;
+            background: #fff;
+            text-align: center;
+            padding: 15px;
+          }
+          
+          .contact .php-email-form .loading:before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            margin: 0 10px -6px 0;
+            border: 3px solid #18d26e;
+            border-top-color: #eee;
+            animation: animate-loading 1s linear infinite;
+          }
+          
+          .contact .php-email-form input,
+          .contact .php-email-form textarea {
+            border-radius: 4px;
+            box-shadow: none;
+            font-size: 14px;
+          }
+          
+          .contact .php-email-form input[type=text],
+          .contact .php-email-form input[type=email] {
+            height: 44px;
+          }
+          
+          .contact .php-email-form textarea {
+            padding: 10px 12px;
+          }
+          
+          .contact .php-email-form button[type=submit] {
+            background: #0563bb;
+            border: 0;
+            padding: 10px 35px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 50px;
+          }
+          
+          .contact .php-email-form button[type=submit]:hover {
+            background: #0678e3;
+          }
+          
+          @keyframes animate-loading {
+            0% {
+              transform: rotate(0deg);
+            }
+          
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
         </style>
     </head>
 
     <body>
 
+      <script>
+        /**
+   * Navbar links active state on scroll
+   */
+  let navbarlinks = select('#navbar .scrollto', true)
+  const navbarlinksActive = () => {
+    let position = window.scrollY + 200
+    navbarlinks.forEach(navbarlink => {
+      if (!navbarlink.hash) return
+      let section = select(navbarlink.hash)
+      if (!section) return
+      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        navbarlink.classList.add('active')
+      } else {
+        navbarlink.classList.remove('active')
+      }
+    })
+  }
+  window.addEventListener('load', navbarlinksActive)
+  onscroll(document, navbarlinksActive)
+
+  rollto = (el) => {
+    let elementPos = select(el).offsetTop
+    window.scrollTo({
+      top: elementPos,
+      behavior: 'smooth'
+    })
+  }
+
+  let backtotop = select('.back-to-top')
+  if (backtotop) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+      } else {
+        backtotop.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+  }
+
+  const typed = select('.typed')
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+      </script>
+
       <header>
         <nav id="navbar">
-          <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#apropos">A propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <a href="#accueil">Accueil</a>
+          <a href="#apropos">A propos</a>
+          <a href="#competences">Compétences</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section id="accueil">
         <div class="container">
           <h1>Will Barka</h1>
-          <p>I'm <span class="typed" data-typed-items="Student of the University of Ngaoundere"></span></p>
+          <p>I'm <span class="typed" data-typed-items="Student of the University of Ngaoundere, Gamer, "></span></p>
           <div class="social-link">
-            <a href="#" class="Facebook"></a>
-            <a href="#" class="WhatsApp"></a>
-            <a href="#" class="Instagram"></a>
-            <a href="#" class="TWitter"></a>
-            <a href="#" class="Telegram"></a>
+            <a href="https://web.facebook.com/agent.hunt.9256/" class="Facebook"></a>
+            <a href="https://wa.me/+237693534265" class="WhatsApp"></a>
+            <a href="https://www.instagram.com/wills_hunt_78?igsdWg0Z2lsaDNncnpm" class="Instagram"></a>
+            <a href="t.me/willhuntsmith" class="Telegram"></a>
           </div>
         </div>
-        <h2>Bienvenue sur mon portfolio</h2>
-        <p>Je suis un jeune garçon ayant chois de me spécialiser en informatique, passionné par la créatiion de sites web, d'applications web et par le génie logiciel</p>
+        
       </section>
 
       <main id="main">
@@ -113,29 +343,34 @@
                     </ul>
                   </div>
                 </div>
+                <h2>Bienvenue sur mon portfolio</h2>
+                <p>Je suis un jeune camerounais originaire de la région de l'Est-Cameroun. Depuis tout petit j'ai toujours été intéressé par l'informatique et si j'ai choisi cette filière c'est pour acquérir des compétences dans ce domaine afin d'exercer un métier dans lequel je serai compétent, et heureux; de plus ce domaine est indispensable dans notre monde moderne d'aujourd'hui surtout dans le développement d'une communaité. Alors apporter ma contribution à une oeuvre comme celle-ci est un devoir.</p>
+                <p>Je suis un étiduant en informatique à l'Université de Ngaoundéré avec déjà un apprentissage de 3 ans dans le développement web, la programmation et le génie logiciel</p>
               </div>
             </div>
             </div>
           </div>
-          <p>Je suis un étiduant en informatique à l'Université de Ngaoundéré avec déjà un apprentissage de 3 ans dans le développement web, la programmation et le génie logiciel</p>
-
+          
         </section>
 
         <section id="competences">
-          <h2>Compétences</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-        </ul>
+          <div claaa="container">
+            <h2>Compétences</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>C++</li>
+            </ul>
+          </div>
         </section>
 
         <section id="contact">
-          <h2>Contact</h2>
-          <p>Vous pouvez me contacter par e-mail à l'adresse suivante : lhumiliteteprecedelagloire@gmail.com</p>
-          <form action="#">
+          <div class="container">
+            <h2>Contact</h2>
+            <p>Vous pouvez me contacter par e-mail à l'adresse suivante : lhumiliteteprecedelagloire@gmail.com</p>
+            <form action="#">
               <label for="nom">Nom :</label>
               <input type="text" id="nom" name="nom">
               <label for="email">Email :</label>
@@ -143,7 +378,8 @@
               <label for="message">Message :</label>
               <textarea id="message" name="message"></textarea>
               <button type="submit">Envoyer</button>
-          </form>
+            </form>
+          </div>
       </section>
 
       </main>
